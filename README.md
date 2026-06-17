@@ -12,6 +12,22 @@ Core banking operations platform with customer management, deposits, withdrawals
 - Branch Management
 - Audit Logging
 
+
+## Architecture
+
+```mermaid
+graph LR
+    CL[Client] --> GW[API Gateway]
+    GW --> AUTH[Auth Service]
+    GW --> SVC[Banking Service]
+    SVC --> DB[(PostgreSQL)]
+    SVC --> EVT[Event Bus]
+    EVT --> AUD[Audit Log]
+    EVT --> FRAUD[Fraud Detection]
+```
+
+Microservices-based architecture with API Gateway, authentication layer, PostgreSQL persistence, and event-driven communication.
+
 ## Stack
 Java 21, Spring Boot, Spring Security, PostgreSQL, Docker
 

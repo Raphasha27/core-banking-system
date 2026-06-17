@@ -1,5 +1,7 @@
 # Core Banking System
 
+
+[![Coverage](https://img.shields.io/badge/Coverage-JaCoCo-blue?style=flat-square&logo=codecov)](https://github.com/Raphasha27/core-banking-system/actions)
 [![CI](https://github.com/koketseraphasha/core-banking-system/actions/workflows/ci.yml/badge.svg)](https://github.com/koketseraphasha/core-banking-system/actions/workflows/ci.yml)
 
 Core banking operations platform with customer management, deposits, withdrawals, transfers, account statements, and branch management.

@@ -18,7 +18,9 @@ jobs:
           distribution: "temurin"
           cache: maven
       - name: Build and test
-        run: mvn verify -B
+        run: mvn verify
+      - name: Generate coverage report
+        run: mvn jacoco:report -B
 
   codeql:
     name: CodeQL

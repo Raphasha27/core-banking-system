@@ -1,0 +1,39 @@
+# Java
+*.class
+*.jar
+*.war
+target/
+build/
+.apt_generated
+.settings/
+.project
+.classpath
+*.iml
+*.ipr
+*.iws
+
+# Secrets
+.env
+*.pem
+*.key
+*.crt
+credentials.json
+keys.json
+tokens.txt
+secrets/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+*.log
